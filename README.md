@@ -15,7 +15,6 @@
 - [Tanstack Query](https://tanstack.com/query/latest/docs/framework/react/overview)
 - [React Hook Form](https://react-hook-form.com/)
 - [Yup](https://www.npmjs.com/package/yup)
-- [Eruda](https://www.npmjs.com/package/eruda)
 - [Axios](https://www.npmjs.com/package/axios)
 - [VK UI](https://vkcom.github.io/VKUI/)
 - [VK Bridge](https://dev.vk.com/ru/bridge/overview)
