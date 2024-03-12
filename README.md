@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Профильное задание на стажировку Frontend-разработчиком Вконтакте
 
-## Getting Started
+## Приложение развернуто на хостинге Vercel по [ссылке](https://vk-mini-app-with-ssr.vercel.app/)
+Изначально написал приложение на Next.js, но на моменте деплоя по каким-то причинам приложение не отображало ничего кроме PanelHeader. При этом, запуская его локально через vk-tunnel - все работало прекрасно. Переделал приложение без SSR на чистом React, так как не нашел причину данного поведения.
 
-First, run the development server:
+## Данный проект собран с помощью [Next.js](https://nextjs.org/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
+### Архитектурная методология
+[Feature Sliced Design](https://feature-sliced.design/)
+
+### Список используемых технологий:
+
+- [Next.js](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tanstack Query](https://tanstack.com/query/latest/docs/framework/react/overview)
+- [React Hook Form](https://react-hook-form.com/)
+- [Yup](https://www.npmjs.com/package/yup)
+- [Eruda](https://www.npmjs.com/package/eruda)
+- [Axios](https://www.npmjs.com/package/axios)
+- [VK UI](https://vkcom.github.io/VKUI/)
+- [VK Bridge](https://dev.vk.com/ru/bridge/overview)
+
+### Команда для запуска
+```js
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Другие команды
+```js
+pnpm build - запуск сборки приложения
+pnpm type-check - запуск проверки типизации
+pnpm lint/lint:md/lint:md:fix - запуск проверки линтером файлов
+pnpm format - форматирование файлов prettier
+pnpm tunnel - запуск локально сервера через VK приложение
+pnpm deploy:vk - запуск сборки и деплоя приложения в VK
+```
